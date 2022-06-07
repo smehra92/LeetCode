@@ -1,0 +1,18 @@
+class Solution {
+    public void rotate(int[] nums, int k) {
+        for(int i=1; i<=k; i++) // This loop is for steps
+        {
+           // for(int j=0; j<nums.length - 1; j++)
+            //{
+             //   nums[j+1] = nums[j];
+            //}
+            
+            
+            for(int j=nums.length-1; j>0; j--) // This loop is for iteration of array
+            {        
+                nums[j] = nums[j-1];    
+            }
+                        
+        }
+    }
+}
